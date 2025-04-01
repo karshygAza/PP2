@@ -113,7 +113,7 @@ while True:
     displaysurf.blit(font_small.render(str(score), True, black), (10, 10))
     displaysurf.blit(font_small.render(str(coins_collected), True, black), (screen_width - 100, 10))
     
-    if random.random() < 0.01:
+    if random.random() < 0.005:
         new_coin = Coin()
         coins.add(new_coin)
         all_sprites.add(new_coin)
